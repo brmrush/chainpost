@@ -1,9 +1,6 @@
 require("dotenv").config()
 const HDWalletProvider = require('@truffle/hdwallet-provider')
 
-INFURA_API_KEY="d30c2302e62b4ba38f2b23b7dac350ee"
-MNEMONIC="seed smooth rebuild pipe miss toward tip trouble push oyster pause prevent"
-
 
 module.exports = {
   networks: {
