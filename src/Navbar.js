@@ -6,6 +6,12 @@ import Identicon from 'react-identicons';
 class Navbar extends Component {
 
 
+  handleDisconnectClick = (event) => {
+    event.preventDefault()
+    this.props.disconnect()
+  }
+
+
   render() {
     
     return (
@@ -18,8 +24,10 @@ class Navbar extends Component {
                 <p>Chainpost</p>
               </a>
                 {this.props.account ?
-                <div className='d-md-flex flex-row align-items-center justify-content-center'>
-                  <Identicon className="m-1" string={this.props.account} size={25}></Identicon><p className='fw-bold raleway text-primary'>{this.props.account.slice(0,8)}... </p>
+                <div className='d-md-flex align-items-center justify-content-center text-center'>
+                  <Identicon className="m-1" string={this.props.account} size={25}></Identicon>
+                  <div><p className='m-1 fw-bold raleway text-primary'>{this.props.account.slice(0,8)}... </p></div>
+                  <button className='btn btn-sm m-1  btn-primary' onClick={this.handleDisconnectClick}>DISCONNECT</button>
                 </div>
                 :
                 <></>
