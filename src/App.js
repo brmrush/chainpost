@@ -181,7 +181,7 @@ class App extends Component {
         
         {this.state.account ?
         <>
-        <Create addPost={this.addPost}></Create>
+        <Create addPost={this.addPost} loading={this.state.loading}></Create>
         <Posts posts={this.state.posts} sendDonation={this.sendDonation}></Posts>
         </>
         :

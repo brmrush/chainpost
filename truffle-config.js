@@ -2,6 +2,8 @@ require("dotenv").config()
 const HDWalletProvider = require('@truffle/hdwallet-provider')
 
 
+
+
 module.exports = {
   networks: {
     development: {
@@ -11,7 +13,7 @@ module.exports = {
     },
 
     ropsten: {
-      provider: () => new HDWalletProvider(MNEMONIC, "https://ropsten.infura.io/v3/"),
+      provider: () => new HDWalletProvider(process.env.MNEMONIC, `https://ropsten.infura.io/v3/${process.env.INFURA_API_KEY}`),
       network_id: 3,       // Ropsten's id
       gas: 5500000,        // Ropsten has a lower block limit than mainnet
       confirmations: 2,    // # of confs to wait between deployments. (default: 0)

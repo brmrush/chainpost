@@ -21,10 +21,9 @@ class Landing extends Component {
               <p>In love with blockchain, and trying to improve his javascript, solidity skills.
               </p>
               <div className='d-flex align-items-center justify-content-center m-1 p-1'>
-                <a href="https://t.me/brmrush"><button className='btn text-light m-1'><h1><i className='bi bi-telegram my-icon'></i></h1></button></a>
-                <a href="https://github.com/brmrush/chainpost"><button className='btn text-light m-1'><h1><i className='bi bi-github my-icon'></i></h1></button></a>
-                <a href="https://www.linkedin.com/in/onur-olgun-1107a215b/"><button className='btn text-light m-1'><h1><i className='bi bi-linkedin my-icon'></i></h1></button></a>
-
+                <a href="https://t.me/brmrush"><button className='btn text-light m-1'><h1><i className='bi bi-telegram'></i></h1></button></a>
+                <a href="https://github.com/brmrush/chainpost"><button className='btn text-light m-1'><h1><i className='bi bi-github'></i></h1></button></a>
+                <p className='raleway fw-bold text-light m-1'>olgun2107@gmail.com</p>
               </div>
             </div>
             <img src={Dev} className='img-fluid w-25'></img>
